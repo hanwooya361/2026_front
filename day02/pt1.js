@@ -1,4 +1,4 @@
-console.log("주문 접수")
+console.log("[주문 접수]")
 
 alert("안녕하세요 손님의 성함을 입력해주세요!")
 console.log("이름")
