@@ -12,6 +12,11 @@ console.log(exercise)
 
 alert("운동 시간(분 단위)을 입력해주세요!")
 console.log("운동 시간")
-let quantity = prompt()
-console.log(quantity)   
+let extime = prompt()
+console.log(extime)   
+
+alert("칼로리가 계산되었습니다!")
+console.log("칼로리")
+let kl = (extime*7)
+console.log(kl)  
 
