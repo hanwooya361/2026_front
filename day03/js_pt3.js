@@ -56,10 +56,10 @@ console.log(`사용자: ${사용자}`) */
 
 80점 이상 90점 미만: 'B'
 
-70점 미만: 'C' */
+70점 미만: 'C' 
 let 점수 = Number(prompt('점수: '))
-let 결과 = (점수 >= 90) ? 'A' : (80 >= 점수 < 90) ? 'B' : (점수 < 70) ? 'C' : '생략'
-document.querySelector("h2").innerHTML = 결과  
+let 결과 = (점수 >= 90) ? 'A' : (점수 >= 80) && (점수 < 90) ? 'B' : (점수 >= 70) && (점수 < 80) ? 'C' : 'D'
+document.querySelector("h2").innerHTML = 결과  */
 
 
 /*문제 7: 청년 할인 이벤트 대상 확인
@@ -105,7 +105,8 @@ console.log(todoList) */
 힌트: 배열의 마지막 요소 인덱스는 배열.length - 1 입니다.
 
 let waitingList = ['김민주', '이서연', '박도윤', '최지우']
-let aa = waitingList.indexOf(최지우)
-console.log(`마지막 대기자는 최지우입니다: ${aa}`) */
-
+let 마지막인덱스 = waitingList.length - 1
+let 이름 = waitingList[마지막인덱스]
+console.log(`마지막 대기자는 ${이름}입니다`)
+*/
 
