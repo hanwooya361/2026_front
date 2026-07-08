@@ -14,8 +14,3 @@ alert("수량을 입력해주세요!");
 console.log("수량")
 let quantity = prompt('수량 ');
 console.log(quantity)
-
-document.write("<h1>주문 정보</h1>");
-document.write("이름 : " + username + "<br />");
-document.write("메뉴 : " + foodname + "<br />");
-document.write("수량 : " + quantity );
