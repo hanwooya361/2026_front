@@ -20,3 +20,8 @@ console.log("칼로리")
 let kl = (extime*7)
 console.log(kl)  
 
+document.write("<h1>운동 기록</h1>");
+document.write("이름 : " + username1 + "<br />");
+document.write("운동종류 : " + exercise + "<br />");
+document.write("운동시간 : " + extime + "<br />");
+document.write("칼로리 : " + kl);
