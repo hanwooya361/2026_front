@@ -112,21 +112,42 @@ console.log(10 + "")
 // 7. 삼항연산자 : 조건 ? 참 : 거짓   ,   true 와 false를 다른값으로 표현하고 싶을때 , 조건A ? 참A : 조건B ? 참B : 조건C ? 참C : 거짓   (단순한 조건문 설정할때)
 // * 점수 >= 90 ? '합격' : '불합격' 
 
+/*
 // [지문1] prompt 함수로 국어 , 영어 , 수학 점수를 각 입력받아서 (각 변수에 저장하고) 총점 과 평균을 계산하여 console탭에 출력하시오.
-
+let 국어점수 = prompt('국어점수: ')    // 1. 입력받기 2. 변수에 저장
+let 영어점수 = prompt('영어점수: ')    // *주의할점 prompt는 입력받은 값을 문자열 타입 
+let 수학점수 = Number(prompt('수학점수: '))    // 안쪽부터 처리하여 문자열 타입을 숫자형으로 바꾸는 방법
+// let 수학점수 = Number(prompt('수학점수:'))
+// 1. "90" 으로 문자열로 처리
+// 2. Number("90") -> 90
+// 3. let 수학점수 = 90 처리
+let 총점 = Number(국어점수) + Number(영어점수) + Number(수학점수)
+let 평균 = 총점 / 3
+console.log(총점)
+console.log(평균)
+console.log(`총점: ${총점} 평균 : ${평균}`)
 
 // [지문2] prompt 함수로 반지름를 입력받아서 원넓이[반지름*반지름*3.14] 계산하여 console탭에 출력하시오.
-
+let 반지름 = prompt('반지름길이: ')
+let 원넓이 = Number(반지름)*Number(반지름)*3.14
+console.log(`원넓이: ${원넓이}`)
 
 // [지문3] prompt 함수로 두 실수를 입력받아서 앞 실수의 값이 뒤실수의 값의 비율% 계산하여console탭에 출력하시오.
-
+let 실수1 = Number(prompt('실수1: '))
+let 실수2 = Number(prompt('실수2: '))
+let 비율 = (실수1/실수2) * 100
+console.log(`비율: ${비율}%`)
 
 // [지문4] prompt 함수로 정수를 입력받아 입력받은 값이 홀수이면 true / 짝수이면 false 로console탭에 출력하시오.
-
+let 정수 = Number(prompt('정수: '))
+let 결과 = 정수 % 2 == 1                                   // 특정값%2 했을때 나머지가 0이면 짝수 1이면 홀수
+console.log(`결과 : ${결과}`)
 
 // [지문5] prompt 함수로 정수를 입력받아 입력받은 값이 7의 배수이면 true / 아니면 false 로console탭에 출력하시오.
-
-
+let 정수1 = Number(prompt('정수1: '))
+let 결과1 = 정수1 % 7 == 0
+console.log(`결과 : ${결과1}')
+*/
 // [지문6] prompt 함수로 아이디 와 비밀번호를 입력받아서 (입력받은)아이디가 'admin' 이고 (입력받은)비밀번호가 1234 와 일치하면 true / 아니면 false 출력하시오.
 
 
