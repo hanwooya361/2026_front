@@ -184,4 +184,3 @@ if (
     TTT[3]==('X') && TTT[4]==('X') && TTT[6]==('X')
 ) {console.log("X 승리")}
 
-if()
