@@ -1,4 +1,4 @@
-TTT = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
+let TTT = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 let gameOver = false 
 console.log(TTT[0],TTT[1],TTT[2])
 console.log(TTT[3],TTT[4],TTT[5])
