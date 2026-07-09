@@ -1,4 +1,5 @@
 TTT = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
+let gameOver = false 
 console.log(TTT[0],TTT[1],TTT[2])
 console.log(TTT[3],TTT[4],TTT[5])
 console.log(TTT[6],TTT[7],TTT[8])
@@ -75,7 +76,10 @@ if (
     TTT[2]==('X') && TTT[5]==('X') && TTT[8]==('X') ||
     TTT[0]==('X') && TTT[4]==('X') && TTT[8]==('X') ||
     TTT[3]==('X') && TTT[4]==('X') && TTT[6]==('X')
-) {console.log("X 승리")}
+) {
+    console.log("X 승리")
+    gameOver = true
+}
 
 let p6 = Number(prompt('원하는 칸을 선택하시오(0~8)'))
 if (TTT[p6]=== ' ') {
@@ -118,7 +122,10 @@ if (
     TTT[2]==('X') && TTT[5]==('X') && TTT[8]==('X') ||
     TTT[0]==('X') && TTT[4]==('X') && TTT[8]==('X') ||
     TTT[3]==('X') && TTT[4]==('X') && TTT[6]==('X')
-) {console.log("X 승리")}
+) {
+    console.log("X 승리")
+    gameOver = true
+}
 
 let p8 = Number(prompt('원하는 칸을 선택하시오(0~8)'))
 if (TTT[p8]=== ' ') {
@@ -174,7 +181,7 @@ if (
     TTT[3]==('O') && TTT[4]==('O') && TTT[6]==('O') 
 ) {console.log("O 승리")}
  else if(
-    TTT[0]==('X') && TTT[1]==('X') && TTT[2]==('X') |
+    TTT[0]==('X') && TTT[1]==('X') && TTT[2]==('X') ||
     TTT[3]==('X') && TTT[4]==('X') && TTT[5]==('X') ||
     TTT[6]==('X') && TTT[7]==('X') && TTT[8]==('X') ||
     TTT[0]==('X') && TTT[3]==('X') && TTT[6]==('X') ||
@@ -182,5 +189,12 @@ if (
     TTT[2]==('X') && TTT[5]==('X') && TTT[8]==('X') ||
     TTT[0]==('X') && TTT[4]==('X') && TTT[8]==('X') ||
     TTT[3]==('X') && TTT[4]==('X') && TTT[6]==('X')
-) {console.log("X 승리")}
+) {
+    console.log("X 승리")
+    gameOver = true
+}
+
+if(gameOver===false){
+    console.log('무승부')
+}
 
