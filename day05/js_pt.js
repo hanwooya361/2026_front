@@ -4,7 +4,7 @@
 
 주어진 숫자 배열에서 가장 큰 값을 찾아 콘솔에 출력하는 프로그램을 작성하시오. (단, Math.max() 함수 사용 금지)
 
-let numbers = [23, 5, 67, 12, 88, 34]; */
+let numbers = [23, 5, 67, 12, 88, 34]; 
 let numbers = [23, 5, 67, 12, 88, 34];
 let bs = numbers[0];
 for(let bsindex = 0; bsindex <= numbers.length-1; bsindex++){
@@ -13,6 +13,7 @@ for(let bsindex = 0; bsindex <= numbers.length-1; bsindex++){
     }
 }
 console.log(bs)
+*/
 /*문제 2: 별 찍기 (기본 역삼각형)
 
 for 중첩 반복문을 사용하여 아래와 같은 모양의 별을 출력하시오.
@@ -26,9 +27,11 @@ for 중첩 반복문을 사용하여 아래와 같은 모양의 별을 출력하
 **
 
 *
-
-
 */
+let a = '*'
+for(let i=0; i>=5; i--) {
+    if(i=0){console.log(a)}
+}
 
 /*문제 3: 배열에서 특정 문자 찾기 (break 활용)
 
