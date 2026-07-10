@@ -191,12 +191,11 @@ let courseList = ['수학', '영어', '과학', '국어'];
 
 let courseList = ['수학', '영어', '과학', '국어'];
 let 신청과목 = prompt('과목명: ')
-let 존재여부 = courseList.includes(신청과목)
 let 과목위치 = courseList.indexOf(신청과목)
-if(존재여부 == false){console.log('해당 과목은 신청 목록에 없습니다')}
+if(과목위치 == -1){console.log('해당 과목은 신청 목록에 없습니다')}
 else{
     courseList.splice(과목위치,1)
     console.log(courseList)
 }
-*/
 
+*/
