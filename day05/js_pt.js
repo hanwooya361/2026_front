@@ -147,8 +147,23 @@ console.log(newnumbers)
 
 let numbers = [5, 3, 4, 1, 2];
 
-힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.*/
-
+힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.
+내 답: 이해가 안돼서 ai 도움 받음 복습 필요
+let numbers = [5, 3, 4, 1, 2];
+function bubbleSort(arr) {
+    for(let i = 0; i <= arr.length-1; i++){
+        for(let j = 0; j <= arr.length-1-i; j++) {
+            if(arr[j] > arr[j+1]){
+                let temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+            }
+        } 
+    }
+    return arr
+}
+console.log(bubbleSort(numbers))
+*/
 
 /*문제 7: 재고 관리 시스템
 
