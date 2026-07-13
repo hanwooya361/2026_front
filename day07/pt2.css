@@ -1,0 +1,30 @@
+.box {
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    background-color: cadetblue;
+    color: white;
+}
+div span {
+    color: yellow;
+}
+
+.box1 {
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    background-color: cadetblue;
+    color: white;
+}
+.숫자1{
+    font-size: 30px;
+}
+.숫자2{
+    font-size: 30px;
+}
+.숫자1-1{
+    font-size: 20px;
+}
+.숫자2-2{
+    font-size: 20px;
+}
