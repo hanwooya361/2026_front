@@ -183,23 +183,24 @@ console.log(bubbleSort(numbers))
 부족합니다."를 출력합니다.
 
 let products = ['볼펜', '노트', '지우개'];
-
 let stock = [10, 5, 20];
+
 let products = ['볼펜', '노트', '지우개'];
 let stock = [10, 5, 20];
-let users = prompt('구매 상품명을 입력해주세요: 1.볼펜 2.노트 3.지우개 ')
-let user = Number(prompt('수량을 입력해주세요: 1.볼펜 2.노트 3.지우개 '))
+let j = prompt('구매 상품명을 입력해주세요: 1.볼펜 2.노트 3.지우개 ')
+let k = Number(prompt('수량을 입력해주세요: 1.볼펜 2.노트 3.지우개 '))
 for(let i = 0; i <= products.length-1; i++){
-    if(products[i] === users) {
-        if(stock[i] >= user) {
-            stock[i] -= user
+    if(products[i] === j) {
+        if(stock[i] >= k) {
+            stock[i] -= k
             console.log('구매 완료')
             console.log(stock)
         } else {
             console.log('재고가 부족합니다')
         }
     }
-}*/
+}
+*/
 
 /*문제 8: 영화 평점 시각화하기
 
@@ -248,7 +249,7 @@ for (let i = 0; i < movieNames.length; i++) {
       }
     }
 
-    html += '<br>';
+    html += '<br />';
 }
 document.querySelector("p").innerHTML = html;
 */
