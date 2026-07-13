@@ -33,6 +33,7 @@ const departments = [
     { id: 5, studentId: 4, courseId: 5 }
   ];
 
+  let html = ''
   let student = students.find(function (item) {
     return item.id === 1;
   });
@@ -40,8 +41,6 @@ const departments = [
   let department = departments.find(function (item) {
     return item.id === student.departmentId;
   });
-
-   let html = '';
 
   html += student.name + '의 학과: ' + department.name + '<br>';
 

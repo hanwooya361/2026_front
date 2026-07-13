@@ -1,0 +1,47 @@
+.title{
+    color: black;
+    font-family: "궁서";
+    font-size: 60px;
+    font-weight: ;
+}
+
+.title2{
+    color: blue;
+    font-family: 'Paperozi';
+    font-size: 25px;
+    word-spacing: 30px;
+    line-height: 150%;
+}
+
+.title3{
+    color: red;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: overline underline line-through;
+    text-align: center;
+}
+
+.title4{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Paperozi';
+    text-decoration: overline underline line-through;
+    text-align: center;
+}
+
+.title5{
+    color: blue;
+    font-family: 'Paperozi';
+    font-size: 25px;
+    word-spacing: 30px;
+    line-height: 150%;
+}
+
+.title6{
+    color: red;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: overline underline line-through;
+    text-align: center;
+}
