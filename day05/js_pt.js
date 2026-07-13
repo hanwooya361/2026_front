@@ -27,11 +27,15 @@ for 중첩 반복문을 사용하여 아래와 같은 모양의 별을 출력하
 **
 
 *
-*/
-let a = '*'
-for(let i=0; i>=5; i--) {
-    if(i=0){console.log(a)}
+
+for(let i=5; i>=1; i--) {
+    let stars = '';
+    for(let k=0; k<i; k++){
+        stars += '*';
+    }
+    console.log(stars)
 }
+*/
 
 /*문제 3: 배열에서 특정 문자 찾기 (break 활용)
 
@@ -39,15 +43,30 @@ for(let i=0; i>=5; i--) {
 
 let userNames = ['김하준', '이서아', '박솔민', '최도윤'];
 
-힌트: 문자열의 .indexOf() 메소드를 사용하세요.*/
+힌트: 문자열의 .indexOf() 메소드를 사용하세요
+let userNames = ['김하준', '이서아', '박솔민', '최도윤'];
+for(let i=0; i<=userNames.length-1; i++){
+    if(userNames[i].indexOf('솔') !== -1 ){
+        console.log([userNames[i]])
+        {break}
+    }
+}
+*/
 
 
 /*문제 4: 2차원 배열의 모든 요소 출력하기
 
 다음과 같은 2차원 배열(좌석표)이 있습니다. 중첩 for 반복문을 사용하여 모든 좌석의 값을 순서대로 출력하시오.
 
-let seatLayout = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']];*/
-
+let seatLayout = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']];
+let seatLayout = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']];
+for (let i = 0; i < seatLayout.length; i++) {
+  
+  for (let j = 0; j < seatLayout[i].length; j++) {
+    console.log(seatLayout[i][j]); 
+  }
+}
+*/
 
 /*문제 5: 배열의 중복 요소 제거하기
 
@@ -55,8 +74,17 @@ let seatLayout = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']];*/
 
 let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
 
-힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며 새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.*/
+힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며 새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.
+let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
+let newnumbers = [];
 
+for (let i = 0; i <=numbers.length - 1; i++) {
+    if (newnumbers.indexOf(numbers[i]) === -1) {
+        newnumbers.push(numbers[i])
+    }
+}
+console.log(newnumbers)
+*/
 
 /*문제 6: 버블 정렬 (Bubble Sort) 구현하기
 
@@ -75,7 +103,12 @@ let numbers = [5, 3, 4, 1, 2];
 let products = ['볼펜', '노트', '지우개'];
 
 let stock = [10, 5, 20];*/
-
+let products = ['볼펜', '노트', '지우개'];
+let stock = [10, 5, 20];
+let user = Number(prompt('구매물건: 1.볼펜 2.노트 3.지우개 '))
+for(let i = 0; i <= products.length-1; i++){
+    for(products[user] !== -1) 
+}
 
 /*문제 8: 영화 평점 시각화하기
 
