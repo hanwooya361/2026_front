@@ -53,5 +53,5 @@ const departments = [
       html += '수강 과목: ' + course.name + '<br>';
     }
   }
-
+  console.log(department)
   document.querySelector('#result').innerHTML = html;
