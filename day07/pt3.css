@@ -5,10 +5,6 @@
     background-color: cadetblue;
     color: white;
 }
-div span {
-    color: yellow;
-}
-
 .box1 {
     border: 2px solid black;
     padding: 20px;
@@ -27,4 +23,8 @@ div span {
 }
 .숫자2-2{
     font-size: 20px;
+}
+
+div span {
+    color: yellow;
 }
