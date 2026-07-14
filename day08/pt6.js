@@ -1,5 +1,4 @@
 // [실습6]
-
 // 문제 1: prompt로 제품 정보 객체 만들기
 
 // prompt를 세 번 사용하여 사용자로부터 '제품명', '가격', '제조사'을 순서대로 입력받습니다. 
@@ -37,7 +36,7 @@ for(let i = 0; i < product.length; i++){
 /*
 const members = [
 
-{ id: 아이디, password: 비밀번호, name: 이름 },
+{ id: 'user1', password: 'pass1', name: '사용자1' },
 
 { id: 'user2', password: 'pass2', name: '사용자2' },
 
@@ -45,7 +44,30 @@ const members = [
 let 아이디 = prompt('아이디: ')
 let 비밀번호 = Number(prompt('비밀번호: '))
 let 이름 = prompt('이름: ')
+
+let 존재여부 = false;
+
+for (let i = 0; i < members.length; i++) {
+    if (members[i].id === 아이디) {
+      존재여부 = true;
+      break;
+    }
+}
+
+if (존재여부) {
+    console.log('존재하는 아이디 입니다');
+  } else {
+    const member = {
+      id: 아이디,
+      password: 비밀번호,
+      name: 이름
+};
+
+    members.push(member);
+    console.log(members);
+}
 */
+
 
 // 문제 3: 객체 배열의 속성 값 평균 구하기
 
@@ -60,7 +82,23 @@ let 이름 = prompt('이름: ')
 // { name: 'C', math: 76, science: 78 }
 
 // ];
+/*
+const scores = [
 
+{ name: 'A', math: 80, science: 92 },
+
+{ name: 'B', math: 95, science: 88 },
+
+{ name: 'C', math: 76, science: 78 }
+
+];
+let 수학총합 = 0
+let 수학평균 = 수학총합 / 3
+for(let i = 0; i < scores.length; i++){
+    수학총합 += scores[i].math
+}
+console.log(수학평균)
+*/
 
 // 문제 4: 특정 조건을 만족하는 객체 찾기
 
@@ -77,7 +115,23 @@ let 이름 = prompt('이름: ')
 // { id: 4, name: '딸기' }
 
 // ];
-
+/*
+const products = [
+{ id: 1, name: '사과' },
+{ id: 2, name: '바나나' },
+{ id: 3, name: '포도' },
+{ id: 4, name: '딸기' }
+];
+for(let i=0; i < products.length; i++){
+    if(products[i].id===3){
+        console.log(products)
+    }
+    else if(products[i].id!==3)
+        {
+        console.log('해당 객체를 찾을 수 없습니다')
+    }
+}
+*/
 
 // 문제 5: 객체 배열 필터링하기
 
@@ -94,7 +148,21 @@ let 이름 = prompt('이름: ')
 // { id: 4, name: '유저4', isActive: false }
 
 // ];
-
+/*
+let activeUsers = [ ]
+const users = [ 
+{ id: 1, name: '유저1', isActive: true },
+{ id: 2, name: '유저2', isActive: false },
+{ id: 3, name: '유저3', isActive: true },
+{ id: 4, name: '유저4', isActive: false }
+];
+for(let i = 0; i < users.length; i++){
+    if(users[i].isActive===true){
+        activeUsers.push(users[i])
+    }
+}
+console.log(activeUsers)
+*/
 
 // 문제 6: 객체 배열 데이터 변환하기
 
@@ -109,8 +177,18 @@ let 이름 = prompt('이름: ')
 // { title: '매트릭스', director: '워쇼스키 자매' }
 
 // ];
-
-
+/*
+let movieTitles = [ ]
+const movies = [
+{ title: '인셉션', director: '크리스토퍼 놀란' },
+{ title: '기생충', director: '봉준호' },
+{ title: '매트릭스', director: '워쇼스키 자매' }
+];
+for(let i = 0; i < movies.length; i++){
+    movieTitles.push(movies[i].title)
+}
+console.log(movieTitles)
+*/
 
 // 문제 7: 데이터 그룹화하기
 
@@ -137,7 +215,18 @@ let 이름 = prompt('이름: ')
 // '기획팀': ['영희', '지혜']
 
 // }
-
+let newteam = [ ]
+const team = [
+{ name: '철수', department: '개발팀' },
+{ name: '영희', department: '기획팀' },
+{ name: '민수', department: '개발팀' },
+{ name: '지혜', department: '기획팀' }
+];
+for(let i = 0; i < team.length; i++){
+    newteam.push(team[i].department)
+    newteam.push(team[i].name)
+}
+console.log(newteam)
 // 문제 8: 장바구니 총액 계산하기
 
 // 고객의 장바구니 정보를 담은 cart 배열과 상품 정보를 담은 productsInfo 배열이 있습니다.
