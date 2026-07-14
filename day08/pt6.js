@@ -35,11 +35,8 @@ for(let i = 0; i < product.length; i++){
 // ];
 /*
 const members = [
-
 { id: 'user1', password: 'pass1', name: '사용자1' },
-
 { id: 'user2', password: 'pass2', name: '사용자2' },
-
 ];
 let 아이디 = prompt('아이디: ')
 let 비밀번호 = Number(prompt('비밀번호: '))
