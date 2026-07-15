@@ -212,6 +212,7 @@ console.log(movieTitles)
 // '기획팀': ['영희', '지혜']
 
 // }
+/*
 let newteam = [ ]
 const team = [
 { name: '철수', department: '개발팀' },
@@ -224,6 +225,8 @@ for(let i = 0; i < team.length; i++){
     newteam.push(team[i].name)
 }
 console.log(newteam)
+*/
+
 // 문제 8: 장바구니 총액 계산하기
 
 // 고객의 장바구니 정보를 담은 cart 배열과 상품 정보를 담은 productsInfo 배열이 있습니다.
@@ -245,6 +248,14 @@ console.log(newteam)
 // { id: 3, price: 2500 }
 
 // ];
+/*
+const cart = [{ id: 1, quantity: 2 },{ id: 3, quantity: 1 }];
+const productsInfo = [
+{ id: 1, price: 1000 },
+{ id: 2, price: 5000 }, // 장바구니에 없는 상품
+{ id: 3, price: 2500 }
+]
+*/
 
 
 // 문제 9: 투표 결과 집계하기
@@ -254,7 +265,19 @@ console.log(newteam)
 // const votes = ['A', 'B', 'B', 'C', 'A', 'B', 'A'];
 
 // 출력 예시: { A: 3, B: 3, C: 1 }
-
+/*
+let 정리 = { }
+const votes = ['A', 'B', 'B', 'C', 'A', 'B', 'A'];
+for(let i = 0; i < votes.length; i++){
+    let 후보 = votes[i]
+    if(정리[후보]){
+        정리[후보] += 1
+    } else {
+        정리[후보] = 1
+    }
+}
+console.log(정리)
+*/
 
 // 문제 10: 웹툰 평점 시각화하기
 
@@ -285,7 +308,31 @@ console.log(newteam)
  전지적 독자 시점 ★★★★★★★★★☆
 
 */
+/*
+const webtoons = [
 
+{ title: '나 혼자만 레벨업', rating: 9.8 },
+
+{ title: '유미의 세포들', rating: 9.9 },
+
+{ title: '전지적 독자 시점', rating: 9.7 }
+
+];
+let html = ' '
+for(let i=0; i<webtoons.length; i++){
+    let 웹툰제목 = webtoons[i].title
+    let 별점 = parseInt(webtoons[i].rating)
+    html += `${웹툰제목}: `
+    for(let star = 0; star < 10; star++  ){
+        if(star < 별점){
+        html += '★'
+    }else {
+        html += '☆'
+        }
+    }    html += '<br />'
+}
+document.querySelector('p').innerHTML = html
+*/
 
 // 문제11 : 공공데이터 포털 : 인천 부평구 맛집 현황 테이블 만들기
 
@@ -318,3 +365,4 @@ console.log(newteam)
 // 6. 인증키 설정 후 'API 목록' 에서 [Open Api 호출] 합니다.
 
 // 7. **실행 결과(JSON)**를 전체 복사합니다. 
+/*let reponse = { }*/
