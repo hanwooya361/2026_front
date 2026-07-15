@@ -1,0 +1,45 @@
+
+.img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.total {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+.box{
+    text-align: center;
+    border: solid 2px black;
+    width: 300px;
+    height: 300px;
+}
+.box1{
+    text-align: center;
+    border: solid 2px black;
+    width: 300px;
+    height: 21  0px;
+}
+.title{
+    font-weight: 800;
+    text-align: left;
+    padding: 10px;
+}
+.price{
+    font-weight: 800;
+    text-align: left;
+    padding: 10px;
+}
+.exp{
+    text-align: left;
+    padding: 10px;
+}
+.num{
+    color: orange;
+    font-weight: 800;
+}
+.a{
+    text-align: left;
+    padding: 10px;
+}

@@ -213,7 +213,7 @@ console.log(movieTitles)
 
 // }
 /*
-let newteam = [ ]
+let newteam = { }
 const team = [
 { name: '철수', department: '개발팀' },
 { name: '영희', department: '기획팀' },
@@ -221,8 +221,12 @@ const team = [
 { name: '지혜', department: '기획팀' }
 ];
 for(let i = 0; i < team.length; i++){
-    newteam.push(team[i].department)
-    newteam.push(team[i].name)
+    let 부서 = team[i].department
+    let 이름 = team[i].name
+    if(newteam[부서]===undefined) {
+        newteam[부서] = []
+    }
+    newteam[부서].push(이름)
 }
 console.log(newteam)
 */
@@ -257,11 +261,11 @@ const productsInfo = [
 ]
 let 총금액 = 0
 for(let i=0; i<cart.length; i++){
-    let 상품 = cart[i]
+    let 수량 = cart[i]
     for(let j=0; j<productsInfo.length; j++){
         let 가격 = productsInfo[j]
-    if(상품.id===가격.id){
-        총금액 += 상품.quantity * 가격.price
+    if(수량.id===가격.id){
+        총금액 += 수량.quantity * 가격.price
         }
     }
 }
@@ -320,13 +324,9 @@ console.log(정리)
 */
 /*
 const webtoons = [
-
 { title: '나 혼자만 레벨업', rating: 9.8 },
-
 { title: '유미의 세포들', rating: 9.9 },
-
 { title: '전지적 독자 시점', rating: 9.7 }
-
 ];
 let html = ' '
 for(let i=0; i<webtoons.length; i++){
