@@ -5,6 +5,7 @@
 
 // 입력받은 정보로 하나의 product 객체를 생성하고, 생성된 객체를 콘솔에 출력하시오.
 /* 
+내 답:
 let 제품명 = prompt('제품명: ')
 let 가격 = prompt('가격: ')
 let 제조사 = prompt('제조사: ')
@@ -16,6 +17,15 @@ product = [
 for(let i = 0; i < product.length; i++){
     console.log(product[i])
 }
+
+교수님:
+let 제품명 = prompt('제품명: ')
+let 가격 = prompt('가격: ')
+let 제조사 = prompt('제조사: ')
+let product = {'제품명' : 제품명, '가격' : 가격, '제조사' : 제조사}
+// 입력받은 제품명이 저장된 변수를 객체내 속성값으로 구성 // 모든 자료들은 변수/상수 저장 가능
+// 만일 속성명과 속성값의 변수명이 같다면 , 속성명 생략 가능
+console.log(product) 
 */
 
 // 문제 2: prompt로 회원 가입 및 아이디 중복 확인 기능 구현
@@ -34,10 +44,12 @@ for(let i = 0; i < product.length; i++){
 
 // ];
 /*
+내 답: 
 const members = [
 { id: 'user1', password: 'pass1', name: '사용자1' },
 { id: 'user2', password: 'pass2', name: '사용자2' },
 ];
+
 let 아이디 = prompt('아이디: ')
 let 비밀번호 = Number(prompt('비밀번호: '))
 let 이름 = prompt('이름: ')
@@ -59,12 +71,35 @@ if (존재여부) {
       password: 비밀번호,
       name: 이름
 };
-
     members.push(member);
     console.log(members);
 }
-*/
 
+교수님:
+const members = [
+{ id: 'user1', password: 'pass1', name: '사용자1' },
+{ id: 'user2', password: 'pass2', name: '사용자2' },
+];
+let 아이디 = prompt('아이디: ')
+let 비밀번호 = Number(prompt('비밀번호: '))
+let 이름 = prompt('이름: ')
+let member = {'id':아이디 , 'password': 비밀번호 , 'name': 이름}
+// 반복문 이용해 특정 조건 충적했다 안했다. 확인변수 == 스위치 변수
+let 중복체크 = false    //
+for (let i = 0; i < members.length; i++) {
+    let 객체 = members[i] // members배열내 i번째 객체 꺼내기
+    if(객체.id == member.id){ // 만약 i번째 객체 아이디와 입력받은 아이디가 같다면
+        중복체크 = true // 만일 중복이면 중복체크값을 true로 대입
+        berak
+    }
+}   // 반복문 종료되고
+if(중복체크==true){
+    console.log('이미 등록된 아이디 입니다')
+} else{
+    console.log('등록했습니다'); 
+    members.push(member)
+}
+*/
 
 // 문제 3: 객체 배열의 속성 값 평균 구하기
 
@@ -119,15 +154,17 @@ const products = [
 { id: 3, name: '포도' },
 { id: 4, name: '딸기' }
 ];
+let find = false
 for(let i=0; i < products.length; i++){
-    if(products[i].id===3){
-        console.log(products)
-    }
-    else if(products[i].id!==3)
-        {
-        console.log('해당 객체를 찾을 수 없습니다')
+    if(products[i].id==3){
+        find = true;
+        console.log(prodicts[i]);
+        break;
     }
 }
+if(find == false){
+console.log('상품을 찾을 수 없습니다')
+} 
 */
 
 // 문제 5: 객체 배열 필터링하기
