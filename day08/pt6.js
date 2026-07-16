@@ -250,6 +250,7 @@ console.log(movieTitles)
 
 // }
 /*
+내 답:
 let newteam = { }
 const team = [
 { name: '철수', department: '개발팀' },
@@ -266,6 +267,27 @@ for(let i = 0; i < team.length; i++){
     newteam[부서].push(이름)
 }
 console.log(newteam)
+
+교수님:
+const team = [
+{ name: '철수', department: '개발팀' },
+{ name: '영희', department: '기획팀' },
+{ name: '민수', department: '개발팀' },
+{ name: '지혜', department: '기획팀' }
+];
+const result = { }
+for(let i=0; i<team.length; i++){   //team 배열 순회
+    //  만약 i번째 부서팀명이 result 객체내 있으면
+    if(team[i].department in result){   // '속성명' in 객체, 객체내 특정속성 존재여부 true/false
+        // 존재하면 배열에 추가 , push 추가
+        result[team[i].department].push(team[i].name)
+    }else{ // 배열 새롭게 구성, = [ ] 초기화
+        // 만일 속성명이 특수문자 , 변수명으로 구성된 경우 .대신 [ ] 사용
+        // 주의할점: 배열의[ ]와 객체의[ ] 구분, 배열의[인덱스번호] vs 객체[속성명문자]
+        result[team[i].department] = [ team[i].name ]
+    }
+}
+console.log(result)
 */
 
 // 문제 8: 장바구니 총액 계산하기
@@ -410,8 +432,8 @@ for(let i=0; i<data.length; i++){
     html += `<tr>
                 <td> ${업소명객체.소재지} </td>
                 <td> ${업소명객체.업소명} </td>
-                <td> ${업소명객체.업대} </td>
-                <td> ${업소명객체.연변} </td>
+                <td> ${업소명객체.업태} </td>
+                <td> ${업소명객체.연번} </td>
                 <td> ${업소명객체.전화번호} </td>
                 <td> ${업소명객체.지정메뉴} </td>
              </tr>`
