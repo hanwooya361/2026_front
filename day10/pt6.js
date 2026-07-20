@@ -30,10 +30,10 @@ console.log(sumArray(numbers))
 const words = ['apple', 'banana', 'kiwi', 'strawberry'];*/
 
 const words = ['apple', 'banana', 'kiwi', 'strawberry'];
-let long = 0
+let long = 길이
 function findLongestWord(string){
     for(let i=0; i<words.length; i++){
-        if()
+        if(길이)
     }
 }
 
@@ -74,7 +74,7 @@ const students = [
 { name: '박민준', score: 78 }
 ];
 function findTopStudent( ){
-    
+
 }
 
 /*실습 6: 상품 목록 페이지 만들기
