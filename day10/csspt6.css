@@ -22,7 +22,7 @@ a{
 li{
     list-style-type: none;  /* li 항목 글머리 제거 */
 }
-/* [1] header */
+/* ================[1] header================ */
 #header{
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,44 @@ li{
     justify-content: end;
     margin: 20px 0px;
 }
+.top-menu > li{
+    margin-left: 10px;
+}
 
-.a{
-    font-size: 30px;
+.main-menu > li{
+    margin-left: 50px;
+    font-size: 20px;    
+    font-weight: bold;
+}
+/* ================[2] main_img================ */
+#main_img > img{
+    width: 100%;
+}
+/* ================[3] main================ */
+#main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.sidebar{
+    width: 220px;
+}
+.sidebar > h3{
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+}
+.sidebar > ol > li{
+    padding: 10px ;
+    border-bottom: 1px solid #eeeeee;
+}
+.content{
+    width: 1030px;
+}
+/* ================[4] footer================ */
+#footer{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: black;
 }
