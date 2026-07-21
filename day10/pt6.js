@@ -121,9 +121,11 @@ const products = [
 let html = ' '
 function renderProducts(){
     for(let i=0; i<products.length; i++){
-        html += `<div><h4>이름: ${products[i].name}</h4>
+        html += `<div>
+                 <h4>이름: ${products[i].name}</h4>
                  <p>가격: ${products[i].price}</p>
-                 <p>재고: ${products[i].stock}</p></div>`
+                 <p>재고: ${products[i].stock}</p>
+                 </div>`
     }
     document.querySelector('div').innerHTML=html
 }
@@ -135,7 +137,7 @@ renderProducts()
 num1, num2, operator ( '+', '-') 세 개의 매개변수를 받는 calculator 함수를 만드시오.
 
 operator가 '+'이면 두 수의 합을, '-'이면 두 수의 차를 콘솔에 출력하시오. (if문 사용)*/
-/*
+
 let operator = '+'
 function calculator(num1, num2, operator){
     if(operator){
@@ -146,8 +148,8 @@ function calculator(num1, num2, operator){
     
 }
 calculator(5, 3, '+')
-console.log(calculator)
-*/
+console.log(calculator(5,3,'+'))
+
 /*실습 8: HTML 리스트(ul, li) 동적 생성
 
 todoList라는 할 일 목록이 담긴 전역 배열이 있습니다.
@@ -183,6 +185,7 @@ renderList()
 20세 이상: "10,000원"
 
 계산된 가격 문자열을 반환(return)하시오.*/
+/*
 let age = 0;
 function getTicketPrice(age){
     if(age >= 20){console.log('10000원')}
@@ -191,3 +194,4 @@ function getTicketPrice(age){
     return age 
 }
 getTicketPrice(10)
+*/
