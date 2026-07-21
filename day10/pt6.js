@@ -137,13 +137,18 @@ renderProducts()
 num1, num2, operator ( '+', '-') 세 개의 매개변수를 받는 calculator 함수를 만드시오.
 
 operator가 '+'이면 두 수의 합을, '-'이면 두 수의 차를 콘솔에 출력하시오. (if문 사용)*/
-
+/*
 function calculator(num1, num2, operator){
-    if(operator === '+'){num1+num2;}
-    else{num1-num2}
+    let result = 0;
+    if(operator == '+'){
+        result=num1+num2
+    }else{
+        result = num1-num2
+    }
+    return result
 }
-calculator(5, 3, '+')
-console.log(calculator)
+console.log(calculator(5,3,'+'))
+*/
 
 /*실습 8: HTML 리스트(ul, li) 동적 생성
 
