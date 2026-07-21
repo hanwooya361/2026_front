@@ -41,3 +41,9 @@ function 등록함수( ){
     // 3. 특정한 위치에 출력
     box2.innerHTML = value
 }
+
+// [6] CSS활용
+// 1. 특정한 마크업DOM 가져오기
+const 제목마크업 = document.querySelector('.title2')
+// 2. 가져온 마크업DOM에서 style 속성 대입하기
+제목마크업.style = "color:red; font-size:5px;" 

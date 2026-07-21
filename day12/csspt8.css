@@ -1,0 +1,42 @@
+*{border: 1px solid red;}
+#main{
+    width: 880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main > div{
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#main > div > img{
+    padding-right: 30px;
+}
+.img{
+    width: 1280px;
+    display: flex;
+    margin: 0 auto;
+}
+.a{
+    font-weight: 400;
+}
+#main-img{
+    display: flex;
+    margin: 0 auto;
+}
+#main-img > div >img{
+    width: 200px;  
+}
+.mm{
+    background-color: #eeeeee;
+    display: flex;
+    margin: 0 auto;
+}
+#main-img > div{
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

@@ -7,57 +7,36 @@
     <link rel='stylesheet' href='main.css'>
 </head>
 <body>
-    <script src="jspt6.js"></script>
-    <h1 class="head">미니 가계부</h1>
+    <h1>미니 가계부</h1>
     <h2>등록 영역</h2>
     <div>
-       <div> 날짜선택: <input type="date"> </div>
-       <div> 항목입력: <input type="text"> </div>
-       <div> 금액입력: <input type="text"> </div>
-       <div><input type="button" value="등록버튼"></div>
+       <div> 날짜선택: <input id="date" type="date"> </div>
+       <div> 항목입력: <input id="list" type="text"> </div>
+       <div> 금액입력: <input id="price" type="text"> </div>
+       <div><button onclick="등록함수()">등록버튼</button></div>
     </div>
     <h2> 목록 영역</h2>
-    <table border="1">
+    <table border="2">
     <thead>
         <tr>
-            <th>
-                날짜
-            </th>
-            <th>
-                항목
-            </th>
-            <th>
-                금액
-            </th>
+            <th>날짜</th>
+            <th>항목</th>
+            <th>금액</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="table">
         <tr>
-            <td>
-                2025-06-19
-            </td>
-            <td>
-                점심식사
-            </td>
-            <td>
-                9000
-            </td>
+            <td>2025-06-19</td>
+            <td>점심식사</td>
+            <td>9000</td>
+        </tr>
+        <tr>
+            <td>2025-06-19</td>
+            <td>점심식사</td>
+            <td>9000</td>
         </tr>
     </tbody>
-    <tbody>
-        <tr>
-            <td>
-                2025-06-19
-            </td>
-            <td>
-                점심식사
-            </td>
-            <td>
-                9000
-            </td>
-        </tr>
-    </tbody>
-    </br>
     </table>
+    <script src="jspt6.js"></script>
 </body>
 </html>
