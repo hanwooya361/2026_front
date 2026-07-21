@@ -1,0 +1,43 @@
+/*  
+    DOM : Document(HTML문서), Object(객체), Model(표준)
+        - html 언어는 개체가 없다. 즉] 변수/연산/함수 등등 없어서 제어/조작 불가능
+        - js 언어는 객체가 있다. 즉]  js가 html 제어/조작 한다.
+    1. 내장객체 : document
+    2. 주요속성 : 
+        1) .querySelector("css선택자") : 선택자의 마크업을 객체로 반환
+        2) .querySelectorAll("css선택자") : 선택자의 마크업 n개를 (객체)배열로 반환
+*/
+
+// [1] HTML 전체 DOM 확인
+console.log(document)
+
+// [2] HTML 내 특정한 마크업 확인
+const div = document.querySelector('div')
+console.log(div)
+const box2 = document.querySelector('.box2')
+console.log(box2)
+const box3 = document.querySelector('#box3')
+console.log(box3)
+const divList = document.querySelectorAll('div')
+console.log(divList)
+
+// [3] 가져온 DOM 마크업 객체에 속성 innerHTML
+const divHTML = div.innerHTML   // <마크업> inner </마크업>
+console.log(divHTML)
+div.innerHTML = "상자1"
+
+// [4] 입력받은 값 가져오기 , .value
+const name = document.querySelector('.name')
+const value = name.value        // <input value="" />
+console.log(value)
+name.value = "제목입력해!"
+
+// [5] 함수활용 : 입력받은 값 함수 내 가져오기
+function 등록함수( ){
+    // 1. 특정한 마크업DOM 가져오기
+    const title = document.querySelector('.title')
+    // 2. 가져온 마크업DOM에서 value 속성 가져오기
+    const value = title.value
+    // 3. 특정한 위치에 출력
+    box2.innerHTML = value
+}

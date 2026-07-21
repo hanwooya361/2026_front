@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0px; margin: 0px;  /* 기본 여백 제거 */    
+}
+a{
+    text-decoration: none;  /* a하이퍼링크 밑줄 제거 */
+    color: black;         
+}
+li{
+    list-style-type: none;  /* li 항목 글머리 제거 */
+}
+
+#header{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#main{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;    /* 세로 정렬 */
+}
+
+.top-menu{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0px;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: end;
+    margin: 20px 0px;
+}
+.top-menu > li{
+    margin-left: 10px;
+}
+
+.main-menu > li{
+    margin-left: 50px;
+    font-size: 20px;    
+    font-weight: bold;
+}
+
+#main_img > img{
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.left{
+    width: 425px;
+}
+.center{
+    width: 425px;
+}
+.right{
+    width: 425px;
+}
