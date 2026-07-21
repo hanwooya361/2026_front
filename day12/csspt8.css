@@ -1,4 +1,4 @@
-*{border: 1px solid red;}
+
 #main{
     width: 880px;
     margin: 0 auto;
@@ -13,6 +13,10 @@
     padding-top: 20px;
 }
 
+#main > div > div > img{
+    width: 90px;
+    padding-right: 20px;
+}
 
 .img{
     width: 1280px;
