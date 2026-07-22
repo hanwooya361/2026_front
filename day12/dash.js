@@ -85,7 +85,7 @@ function staffAdd(){
     }
     let object = {
         tcode:team, pcode:position, sname:name, 
-        simage : image == undefined ? 'https://placehold.co/100' : URL.createObjectURL(image),
+        simage : image == undefined ? 'https://placehold.co/100' : URL.createObjectURL(simage),
         scode : finalstaff+1 }
     staff.push(object); finalstaff += 1
     alert('등록 완료');
