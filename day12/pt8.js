@@ -146,7 +146,7 @@ function productAdd( ){
     let pdate = `${ new Date().getFullYear() }-${ new Date().getMonth()+1 }-${ new Date().getDate() }`
     let object = { ccode : category , pname : name , pprice : price , 
                     // 만약 첨부파일 선택이 없으면(undefined) 기본이미지 있으면 선택한 첨부파일 가상URL 생성
-                    pimg : image == undefined ? 'https://placehold.co/100' : URL.createObjectURL(image) ,  // URL.createObjectURL(객체) 객체 (가상) 주소 생성 
+                    pimg : image == undefined ? 'https://placehold.co/10' : URL.createObjectURL(image) ,  // URL.createObjectURL(객체) 객체 (가상) 주소 생성 
                     pcode : finalPcode+1 , pdate : pdate }
     // 3. 배열 저장  , **마지막 제품코드 1 증가** 
     productList.push( object ); finalPcode += 1
