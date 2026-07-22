@@ -62,8 +62,8 @@ function staffUpdate(scode){
     for(let i=0; i<staff.length; i++){
         if(staff[i].scode == scode){
             let newSname = prompt('수정할 이름을 입력하세요')
-            let newTname = prompt('수정할 부서의 이름을 입력하세요')
-            let newPname = prompt('수정할 직급을 입력하세요')
+            let newTname = prompt('수정할 부서의 번호를(1~3) 입력하세요')
+            let newPname = prompt('수정할 직급의 번호를(1~3) 입력하세요')
             staff[i].sname = newSname
             staff[i].tcode = newTname
             staff[i].pcode = newPname
