@@ -83,9 +83,13 @@ function staffAdd(){
         alert('부서명을 선택해주세요');
         return;
     }
+    if(position == 'disabled'){
+        alert('직급을 선택해주세요');
+        return;
+    }
     let object = {
         tcode:team, pcode:position, sname:name, 
-        simage : image == undefined ? 'https://placehold.co/100' : URL.createObjectURL(simage),
+        simage : image == undefined ? 'https://placehold.co/100' : URL.createObjectURL(image),
         scode : finalstaff+1 }
     staff.push(object); finalstaff += 1
     alert('등록 완료');
