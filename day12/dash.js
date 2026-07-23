@@ -78,7 +78,7 @@ function staffAdd(){
     let name = document.querySelector('.name').value
     let position = document.querySelector('.position').value
     let team = document.querySelector('.team').value
-    let image = document.querySelector('.image').value.files
+    let image = document.querySelector('.image').files[0]
     if(team == 'disabled'){
         alert('부서명을 선택해주세요');
         return;
