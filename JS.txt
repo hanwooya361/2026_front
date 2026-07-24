@@ -141,3 +141,19 @@ function sum( ){ }              sum( )
     new Date().getFullYear()    : 연도 반환 
     new Date().getMonth()       : 월 반환 ( 0:1월~)
     new Date().getDate()        : 일 반환 vs    
+
+웹스토리지 : 브라우저 저장소    *문자열 타입*
+    1. 세션스토리지 : sessionStorage 객체, 브라우저 종료되면 초기화
+    2. 로컬스토리지 : localStorage 객체, 브라우저 종료되면 유지
+    3. 사용법
+        .setIem('key', value) : 스토리지 자료 저장
+        .getIem('key')        : 스토리지 자료 호출
+        .remove('key)         : 스토리지 자료 삭제
+    4. JSON(자바스크립트객체) 형변환
+        JSON --> String : JSON.stringify(객체)
+        String --> JSON : JSON.parse(문자열)
+    
+쿼리스트링 : Http 웹 주소(경로/url)에 매개변수 포함 *문자열 타입*
+    1. 목적 : 페이지 이동간에 자료 전달
+    2. 사용법 
+        - URL ? 매개변수명 = 값 & 매개변수명 = 값
