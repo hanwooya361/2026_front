@@ -1,3 +1,15 @@
 .total{
     background-color: red;
 }
+
+.box{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+.box1{
+    display: flex;
+    text-align: center;
+}
