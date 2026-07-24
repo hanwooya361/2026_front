@@ -1,15 +1,47 @@
 .total{
     background-color: red;
-}
+    width: 1300px;
+    height: 800px;
+    border-radius: 10px;
+    position: relative;
+}   
 
 .box{
-    width: 150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 200px;
     height: 100px;
     background-color: yellow;
-    border: 1px solid red;
     border-radius: 10px;
+    position: absolute;
 }
 .box1{
-    display: flex;
-    text-align: center;
+    top:40px;
+    left:550px;
+}
+
+.box2{
+    top:140px;
+    left:150px;
+}
+
+.box3{
+    top:140px;
+    right:150px;
+}
+
+.box4{
+    top:430px;
+    left:150px;
+}
+
+.box5{
+    top:430px;
+    right:150px;
+}
+
+.box6{
+    bottom:150px;
+    left:550px;
 }
